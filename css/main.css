@@ -2990,3 +2990,12 @@ pre .javascript .function {
     text-align: justify;
   }
 }
+
+/* 个人添加 */
+.content-wrap{
+  background: transparent!important;
+}
+
+.post{
+  box-shadow: 2px 2px 2px #222;
+}
