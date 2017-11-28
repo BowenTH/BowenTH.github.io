@@ -86,12 +86,12 @@
 <meta property="og:site_name" content="LaGa笔记">
 <meta property="og:description" content="note">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2017/11/28/note/img/bowen.png">
-<meta property="og:updated_time" content="2017-11-28T00:35:33.515Z">
+<meta property="og:image" content="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=958610146,3958420962&fm=58&u_exp_0=391576531,3625115552&fm_exp_0=86&bpow=450&bpoh=450">
+<meta property="og:updated_time" content="2017-11-28T05:52:07.956Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="note">
 <meta name="twitter:description" content="note">
-<meta name="twitter:image" content="http://yoursite.com/2017/11/28/note/img/bowen.png">
+<meta name="twitter:image" content="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=958610146,3958420962&fm=58&u_exp_0=391576531,3625115552&fm_exp_0=86&bpow=450&bpoh=450">
 
 
 
@@ -355,7 +355,7 @@
       
 
       
-        <h1 id="note"><a href="#note" class="headerlink" title="note"></a>note</h1><p><img src="img/bowen.png" alt="note"></p>
+        <h1 id="note"><a href="#note" class="headerlink" title="note"></a>note</h1><p><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=958610146,3958420962&amp;fm=58&amp;u_exp_0=391576531,3625115552&amp;fm_exp_0=86&amp;bpow=450&amp;bpoh=450" alt="note"></p>
 
       
     </div>
@@ -1101,6 +1101,35 @@
   
 
   
+
+  
+<div id="hexo-helper-live2d">
+  <canvas id="live2dcanvas" width="150" height="300"></canvas>
+</div>
+<style>
+  #live2dcanvas{
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    opacity:0.7;
+    right: 0px;
+    z-index: 999;
+    pointer-events: none;
+    bottom: -20px;
+  }
+</style>
+<script type="text/javascript" src="/live2d/device.min.js"></script>
+<script type="text/javascript">
+const loadScript = function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";"undefined"!=typeof b&&(a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,b()}:a.onload=function(){b()});a.src=c;document.body.appendChild(a)};
+(function(){
+  if((typeof(device) != 'undefined') && (device.mobile())){
+    document.getElementById("live2dcanvas").style.width = '75px';
+    document.getElementById("live2dcanvas").style.height = '150px';
+  }else
+    if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/nipsilon.model.json", 0.5);});
+})();
+</script>
 
 </body>
 </html>
