@@ -4,10 +4,11 @@ module.exports = {
 	// head: [
 	// 	['link', { rel: 'icon', href: '/images/Book.png'}]
 	// ]
-	base: '/note/',
+	base: './',
   title: 'note',
   description: '文件上传组件 vue文件上传 多文件上传',
   // port:8888,
+  dest: 'docs/dist',
   themeConfig: {
     repo: 'ZhuLiangT/v-alien-upload',
     sidebar: [
