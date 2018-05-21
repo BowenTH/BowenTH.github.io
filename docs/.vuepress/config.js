@@ -12,19 +12,20 @@ module.exports = {
   themeConfig: {
     repo: 'ZhuLiangT/v-alien-upload',
     sidebar: [
-      ['/', '介绍'],
-      ['/example/', '示例'],
+      ['/flex/', '声明'],
+      ['/column/', '横向布局'],
+      // ['/example/', '示例'],
       // ['/getstart/', '起步'],
       // ['/api/', '属性'],
       // ['/function/', '方法']
 
-      {
-        title: 'Group 1',
-        collapsable: true,
-        children: [
-          '/', '/'
-        ]
-      },
+      // {
+      //   title: 'Group 1',
+      //   collapsable: true,
+      //   children: [
+      //     '/', '/'
+      //   ]
+      // },
     ],
     nav: [
       {
