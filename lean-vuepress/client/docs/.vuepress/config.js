@@ -33,9 +33,9 @@ module.exports = {
         title: '其他语言',
         collapsable: true,
         children:[
-          ['/shell/', 'shell命令实例'],
           ['/python/', 'Python'],
-          ['/python/demo', '实例']
+          ['/python/demo', '实例'],
+          ['/shell/', 'shell命令实例']
         ]
       }
     ],

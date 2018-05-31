@@ -1,18 +1,19 @@
-# shell 发布vuepress应用
+---
+sidebar: auto
+---
+## shell 发布vuepress应用
 
 ```bash
 #!/bin/bash
 echo begin python shell-------分割线
-pwd
-
-git push -f https://github.com/BowenTH/BowenTH.github.io.git master
 cd client
 # 构建
 npm run docs:build
 
 # 导航到构建输出目录
-cd docs/dist
-
+cd ../../
+cp -rf lean-vuepress/client/docs/dist/* ./
+echo git init path:-------
 git init
 git add -A
 git commit -m 'deploy'
@@ -63,3 +64,5 @@ else
    echo "Ther is no document path"  
 fi 
 ```
+
+<comment commentIndex="shell" />
