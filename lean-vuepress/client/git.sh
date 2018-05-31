@@ -7,8 +7,11 @@ npm run docs:build
 
 # 导航到构建输出目录
 # cd docs/dist
-cp -rf docs/dist/* ../../
-
+cd ../../
+pwd
+cp -rf lean-vuepress/client/docs/dist/* ./
+echo git init path:-------
+pwd
 git init
 git add -A
 git commit -m 'deploy'
