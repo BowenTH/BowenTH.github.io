@@ -14,6 +14,13 @@ module.exports = {
     repo: 'https://gitlab.com/koopoo/qhw-mp',
     sidebar: [
       {
+        title: '基于对象编程',
+        collapsable: true,
+        children: [
+          ['/object/','声明']
+        ]
+      },
+      {
         title: '布局',
         collapsable: true,
         children: [
