@@ -1,7 +1,7 @@
 module.exports = {
   title: 'bowenth的博客空间',
   description:'个人博客空间',
-  // base: '/page/dist/',
-  // dest: '../dist'
+  base: '/page/dist/',
+  dest: 'docs/dist'
 
 }
