@@ -21,10 +21,10 @@
         return this.$page.frontmatter
       },
     },
-    created() {
-      this.visitId = window.location.pathname
-    },
     mounted() {
+      setTimeout(() => {
+        this.visitId = window.location.pathname
+      }, 100);
       this.createValine()
     },
     methods: {
