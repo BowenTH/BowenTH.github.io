@@ -1,6 +1,6 @@
 # 日志
 
-[进入日志](dist/index.html)
+[进入日志](doc/index.html)
 
 ## 更新日志
   
