@@ -5,6 +5,10 @@ module.exports = {
   dest: 'docs/doc',
 
   themeConfig: {
+    markdown: {
+      lineNumbers: true,
+    },
+    lastUpdated: 'Last Updated', // string | boolean
     nav: [{
         text: '主页',
         link: '/'
@@ -31,12 +35,14 @@ module.exports = {
       },
       {
         text: 'Github',
-        link: 'https://www.github.com/codeteenager'
+        link: 'https://www.github.com/BowenTH'
       },
     ],
+    sidebar: 'auto',
     sidebar:[
       ['/', '首页'],
-      ['/demo/','训练场']
+      ['/regexp/', '正则表达'],
+      ['/dev/','训练场'],
     ],
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',
