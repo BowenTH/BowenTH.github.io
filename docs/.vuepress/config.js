@@ -1,5 +1,5 @@
 module.exports = {
-  title: '日志',
+  title: '小可不才 ~ ',
   description: '个人博客空间',
   base: '/page/doc/',
   dest: 'docs/doc',
@@ -41,6 +41,9 @@ module.exports = {
     sidebar: 'auto',
     sidebar:[
       ['/', '首页'],
+      ['/web/','前端'],
+      ['/python/','其他'],
+
       ['/regexp/', '正则表达'],
       ['/dev/','训练场'],
     ],

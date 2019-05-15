@@ -1,7 +1,7 @@
 <template>
   <div class="vcomment">
     <div id="vcomments"></div>
-    <span :id="visitId" class="leancloud-visitors" data-flag-title="Your Article Title">
+    <span :id="visitId" class="leancloud-visitors" :data-flag-title="$page.headers && $page.headers.title">
         <em class="post-meta-item-text">阅读量 </em>
         <i class="leancloud-visitors-count"></i>
     </span>
@@ -21,11 +21,11 @@
         return this.$page.frontmatter
       },
     },
-    mounted() {
+    created() {
       this.visitId = window.location.pathname
+    },
+    mounted() {
       this.createValine()
-      console.log('mounted..');
-      
     },
     methods: {
       createValine() {
@@ -40,10 +40,8 @@
           verify: false,
           avatar: 'monsterid',
           path: window.location.pathname,
-          placeholder: '欢迎留言与我分享您的想法...',
+          placeholder: '欢迎留言与我分享您的想法 ~ 添加邮箱会有回复通知',
         });
-        console.log(valine);
-        
         this.valineRefresh = false
       }
     },
